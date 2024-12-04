@@ -3,7 +3,7 @@ title: "Google Pixel 9 Pro XL Price Comparison Across Countries"
 date: 2024-12-01
 ---
 For our assignment, we picked the Google Pixel 9 Pro XL to compare the Canadian price to other countries.
-
+**Section 1: Introduction**
 **Section 1.1:** *Importing and defining functions.*
 ![image](https://github.com/user-attachments/assets/f173c6a8-78cc-432d-bb18-8e48c0caabe1)
 ![image](https://github.com/user-attachments/assets/fd5ab668-ab29-4185-9c9d-bba87e18f3e5)
@@ -14,6 +14,7 @@ We imported all the important libraries to webscrape, work with tables, and plot
 ![image](https://github.com/user-attachments/assets/c417f8f9-a7f5-43e6-9d4b-3a4c0b703036)
 We chose to work with 10 countries including Canada, so we put their names and relative currency code in an array to be able to use later.
 
+**Section 2: Importing Datasets.**
 **Section 2.1:** *Prices.*
 ![image](https://github.com/user-attachments/assets/8fea2f86-fe68-4943-b461-521f4910eedc)
 We used this website to scrape a table that tells us the price of the Google Pixel 9 Pro XL in USD across various countries.  In this code, we also only take the countries that we are interested in using the array we defined before.
@@ -27,7 +28,7 @@ We cleaned the units from the original table and converted them into integers to
 ![image](https://github.com/user-attachments/assets/e0953bd0-d400-41aa-85c9-c251061e4d52)
 Created arrays and dictionaries to use for our conversion tables later.
 
-*Section 2.2.1: USD to Local*
+***Section 2.2.1:*** *USD to Local.*
 ![image](https://github.com/user-attachments/assets/974eaef3-6a53-48cc-8259-958e4e1cbdf7)
 ![image](https://github.com/user-attachments/assets/62d2b3d5-dbeb-4e3b-b38f-703bd2dfd121)
 
@@ -41,7 +42,7 @@ To make the local conversion rates more accessible to manipulate, we created a "
 
 We then used a "for loop" to convert each price in USD for each country into that country's local currency using the dictionary we created earlier. We put each of these values in a newly defined table.
 
-*Section 2.2.2: Local to CAD*
+***Section 2.2.2:*** *Local to CAD.*
 
 ![image](https://github.com/user-attachments/assets/46a64181-06af-4270-a6a5-4bb13a57be7e)
 ![image](https://github.com/user-attachments/assets/7f070730-321f-445d-ab86-e0c82ac78c20)
@@ -56,7 +57,7 @@ Again, to make them more accessible we put these currencies in a dictionary.
 
 Again, we used the same method to convert the local prices to CAD prices but this time, we added the CAD conversions instead of creating a new table.
 
-*Section 2.2.3: Calculating the Difference*
+***Section 2.2.3:*** *Calculating the Difference.*
 
 ![image](https://github.com/user-attachments/assets/196429f0-cae6-4a0f-8472-b2019a0c906b)
 ![image](https://github.com/user-attachments/assets/3317700d-3655-4f34-8abc-fc599f9d45ae)
@@ -70,7 +71,7 @@ We calculated the difference between the Canadian price of the phone with the co
 
 For our external factor, we decided on country GDP per capita since in a general sense, poorer countries tend to have cheaper goods than richer countries.  We webscraped a website with countries GDP per capita and only took the countries we were interested in.
 
-***Section 3:*** *Tables.*
+**Section 3: Tables.**
 
 ![image](https://github.com/user-attachments/assets/f7c151e0-2550-42c5-b39f-a0785542d9d5)
 
