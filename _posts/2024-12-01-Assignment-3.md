@@ -20,12 +20,12 @@ We chose to work with 10 countries including Canada, so we put their names and r
 
 **Section 2.1:** *Prices.*
 ![image](https://github.com/user-attachments/assets/8fea2f86-fe68-4943-b461-521f4910eedc)
-We scraped this webste to make a table that tells us the price of the Google Pixel 9 Pro XL in USD across various countries and we took the countries we were interested in using with the pre-made array (countries).
+We scraped this website to make a table that tells us the price of the Google Pixel 9 Pro XL in USD across various countries and we took the countries we were interested in using with the pre-made array (countries).
 
 ![image](https://github.com/user-attachments/assets/1884a3f8-88d4-40bf-8215-e1ff89cde2b2)
 ![image](https://github.com/user-attachments/assets/540ef966-47f0-4825-91b0-8cbb6d8e1569)
 
-We cleaned the units from the original table and converted them into integers to be able to do calculations on.  Then, we added the currency codes of each country with the other pre-made array (currency_or_countries).
+We cleaned the units from the original table and converted them into integers to be able to do calculations on.  Then, we added the currency codes of each country with the other pre-made array (currency_of_countries).
 
 **Section 2.2:** *Conversion Rates.*
 ![image](https://github.com/user-attachments/assets/e0953bd0-d400-41aa-85c9-c251061e4d52)
@@ -78,7 +78,7 @@ For our external factor, we decided on GDP per capita since in a general sense, 
 
 ![image](https://github.com/user-attachments/assets/f7c151e0-2550-42c5-b39f-a0785542d9d5)
 
-We joined the table with GDP and the price differences in CAD for each country and dropped the unnecessary data in order to graph it more simply.  We also then sorted the GDP from largest to smallest to see if we could visually see a pattern in the data.
+We joined the table with the GDP per capita for each country and their price differences in CAD and dropped the unnecessary data in order to graph it more simply.  We also then sorted the GDP from largest to smallest to see if we could visually see a pattern in the data.
 
 ![image](https://github.com/user-attachments/assets/c4402182-324e-479b-b447-42f9115bf99a)
 
@@ -96,7 +96,7 @@ This graph is still sorted from largest to smallest GDP per capita.  At first gl
 
 ![image](https://github.com/user-attachments/assets/12cb4d66-ef26-4ac9-aa24-3f4bb2b44616)
 
-The Code in order to create a scatterplot between the price difference and the GDP per capita for each country minus Canada.  This code also prints out the statistical correlation between the two using a pre-defined function we established earlier.
+The code in order to create a scatterplot between the price difference and the GDP per capita for each country minus Canada.  This code also prints out the statistical correlation between the two using a pre-defined function we established earlier.
 ![image](https://github.com/user-attachments/assets/8b8cd406-4e68-4091-ab74-574baea3d711)
 
 Without the fitline, we could barely see a pattern in the data, but the fitline tells us that theres a slight negative correlation.  To corroborate this, our function tells us that the correlation is -0.24.  This is a small negative correlation which doesn't necessarily mean that these two variables actually have a pure negative correlation, even if its a small one.  We also have to keep in mind this correlation can change as our data for currency conversion is live.  This means our hypothesis was wrong, and that it was not a positive correlation.  However, we only have 10 countries to base this conclusion and they are all Western countries, which could influence the data.
