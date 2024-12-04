@@ -3,7 +3,9 @@ title: "Google Pixel 9 Pro XL Price Comparison Across Countries"
 date: 2024-12-01
 ---
 For our assignment, we picked the Google Pixel 9 Pro XL to compare the Canadian price to other countries.
+
 **Section 1: Introduction**
+
 **Section 1.1:** *Importing and defining functions.*
 ![image](https://github.com/user-attachments/assets/f173c6a8-78cc-432d-bb18-8e48c0caabe1)
 ![image](https://github.com/user-attachments/assets/fd5ab668-ab29-4185-9c9d-bba87e18f3e5)
@@ -15,6 +17,7 @@ We imported all the important libraries to webscrape, work with tables, and plot
 We chose to work with 10 countries including Canada, so we put their names and relative currency code in an array to be able to use later.
 
 **Section 2: Importing Datasets.**
+
 **Section 2.1:** *Prices.*
 ![image](https://github.com/user-attachments/assets/8fea2f86-fe68-4943-b461-521f4910eedc)
 We used this website to scrape a table that tells us the price of the Google Pixel 9 Pro XL in USD across various countries.  In this code, we also only take the countries that we are interested in using the array we defined before.
